@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 // Clone the Git repository
-                git 'https://github.com/joannedada/JavaWeb3.git'   // Use your GitHub repository
+                git branch: 'dev', url:'https://github.com/joannedada/JavaWeb3.git'   // Use your GitHub repository
             }
         }
 
