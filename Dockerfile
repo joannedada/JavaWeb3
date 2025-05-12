@@ -8,3 +8,5 @@ COPY */target/WebAppCal-0.0.6.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port 8080 (Tomcat default)
 EXPOSE 8081
+
+CMD catalina.sh run
