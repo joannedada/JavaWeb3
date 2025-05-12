@@ -4,7 +4,7 @@ FROM tomcat:9.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file into the Tomcat webapps directory
-COPY job/target/WebAppCal-0.0.6.war /usr/local/tomcat/webapps/ROOT.war
+COPY */target/WebAppCal-0.0.6.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port 8080 (Tomcat default)
 EXPOSE 8080
